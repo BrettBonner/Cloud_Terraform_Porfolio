@@ -1,0 +1,8 @@
+Notes of AWS Best Practices for using Terraform
+    #Security
+    - Follow the principle of least privilege
+    - Terraform acts on behalf of an entity(user or role) that requires appropriate permissions to make API calls
+    - Use IAM roles instead of IAM users whenever possible. IAM roles provide temporary security credentials that automatically rotate, which elimates the need to manage long-term access keys.
+    - Can use IAM Access Analyzer to evaluate policies and highlight unused permissions that can be removed.
+    - When running Terraform locally you can use 'aws sts assume-role' to retrieve short-lived credentials for the role. valid for 1 hour. This grants elevated priviledge strictly for the Terraform session's duration.
+    - Use AWS Secrets Manager for storing secret values, instead of putting values in state file.
