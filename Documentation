@@ -10,3 +10,5 @@ Notes of AWS Best Practices for using Terraform
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources
 
     -ARN : Amazon Resource Name
+    - Resource: used for creating a new resource
+    - Data: used for calling an exisitng resource
