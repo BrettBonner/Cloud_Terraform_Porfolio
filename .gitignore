@@ -2,3 +2,7 @@
 *.tfstate*
 crash.log
 *.tfvars*
+**/.terraform/
+*.tfstate*
+crash.log
+*.tfvars*
